@@ -4,7 +4,7 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #2D3250;
 }
 
 .login-container h1 {
@@ -29,7 +29,7 @@
     border-radius: 5px;
 }
 
-button[type="submit"] {
+.submit-button {
     width: 100%;
     padding: 10px;
     border: none;
@@ -39,7 +39,7 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
+.submit-button:hover {
     background-color: #0056b3;
 }
 
