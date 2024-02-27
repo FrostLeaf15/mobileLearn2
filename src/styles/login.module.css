@@ -5,6 +5,9 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #2D3250;
+    position: relative;
+    margin-top: 50%;
+    margin-bottom: 50%;
 }
 
 .login-container h1 {
@@ -55,4 +58,8 @@
 
 .link a:hover {
     text-decoration: underline;
+}
+
+.input {
+    color: black;
 }
