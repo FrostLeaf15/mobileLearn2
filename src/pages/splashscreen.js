@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import styles from '../styles/splashscreen.module.css';
 
 const SplashScreen = () => {
   const [isOnline, setIsOnline] = useState(true);
@@ -33,7 +34,10 @@ const SplashScreen = () => {
   return (
     <div className="splash-screen">
       {isOnline ? (
-        <h1>Loading...</h1>
+        <div className={styles.container}>
+          <img src="../img/logo.png" alt="Logo" className={styles.logo} />
+          <h1 className={styles.text}>Selamat Datang</h1>
+        </div>
       ) : (
         <div className="bad-connection">
           <h1>Bad Connection</h1>
