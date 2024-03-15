@@ -5,9 +5,10 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #2D3250;
-    position: relative;
-    margin-top: 50%;
-    margin-bottom: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .login-container h1 {
@@ -62,4 +63,10 @@
 
 .input {
     color: black;
+}
+
+.btnLogin {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
