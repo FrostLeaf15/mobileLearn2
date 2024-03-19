@@ -34,7 +34,7 @@ const SplashScreen = () => {
   return (
     <div className="splash-screen">
       {isOnline ? (
-        <div className={styles.container}>
+        <div className={styles["container"]}>
           <img src="../img/logo.png" alt="Logo" className={styles.logo} />
           <h1 className={styles.text}>Selamat Datang</h1>
         </div>
