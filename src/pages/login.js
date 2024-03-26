@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import styles from '../styles/login.module.css';
+import Image from 'next/image';
+import logoPic from '../image/logo.png';
 
 const Login = () => {
   const router = useRouter();
@@ -19,6 +21,9 @@ const Login = () => {
 
   return (
     <div className={styles["login-container"]}>
+      <div className={styles.logo}>
+        <Image src={logoPic} alt="Logo" className={styles.logo} />
+      </div>
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <div className={styles["form-group"]}>
@@ -41,7 +46,7 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit" className={styles["btnLogin"]}>Login</button>
+        <button type="submit" className={styles["btnLogin"]}>Submit</button>
       </form>
       {error && <p>{error}</p>}
       <div>

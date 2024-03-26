@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from '../styles/splashscreen.module.css';
+import Image from 'next/image';
+import logoPic from '../image/logo.png';
 
 const SplashScreen = () => {
   const [isOnline, setIsOnline] = useState(true);
@@ -35,7 +37,7 @@ const SplashScreen = () => {
     <div className="splash-screen">
       {isOnline ? (
         <div className={styles["container"]}>
-          <img src="../img/logo.png" alt="Logo" className={styles.logo} />
+          <Image src={logoPic} alt="Logo" className={styles.logo} />
           <h1 className={styles.text}>Selamat Datang</h1>
         </div>
       ) : (
