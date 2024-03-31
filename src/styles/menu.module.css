@@ -1,48 +1,54 @@
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
+@media screen and (max-aspect-ratio: 16/9) {
+    .container {
+        max-width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 
-.gridContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-}
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+    }
 
-.gridItem {
-    /* text-align: center;*/
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    .gridItem {
+        /* text-align: center;*/
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
-.gridItem image {
-    /*width: 100%;
-    max-width: 200px;*/ /* Sesuaikan dengan ukuran yang diinginkan */
-    height: 150px;
-    aspect-ratio: 1;
-    margin: 5px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-}
+    .gridItem Image {
+        /*width: 100%;
+        max-width: 200px;*/ /* Sesuaikan dengan ukuran yang diinginkan */
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+    }
 
-.gridItem p {
-    margin-top: 10px;
-    font-size: 18px;
-}
+    .gridItem p {
+        margin-top: 10px;
+        font-size: 18px;
+        position: relative;
+        text-align: center;
+    }
 
-.judul {
-    margin-bottom: 10%;
-}
+    .judul {
+        margin-bottom: 10%;
+    }
 
-.img {
-    width: 150px;
-    aspect-ratio: 1;
+    .img {
+        width: 100px;
+        aspect-ratio: 1;
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
 }
