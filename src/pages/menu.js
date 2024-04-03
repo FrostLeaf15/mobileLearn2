@@ -1,7 +1,6 @@
 import styles from '../styles/menu.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import imgPic from '../image/image.jpg';
 import thermometerPic from '../image/thermometer.png';
 import distancePic from '../image/distance.png';
 import heavyPic from '../image/scales.png';
@@ -12,7 +11,7 @@ function Menu() {
     <div className={styles.container}>
       <h1 className={styles.judul}>Menu Konversi</h1>
       <div className={styles.gridContainer}>
-        <Link href="/page1">
+        <Link href="/pageSuhu">
             <div className={styles.gridItem}>
               <Image src={thermometerPic} alt="Suhu" className={styles.img} />
               <p>Suhu</p>
